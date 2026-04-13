@@ -87,11 +87,11 @@ export const authApi = {
 }
 
 export const formApi = {
-  latest: () => formClient.get('/forms/latest'),
-  save: (formData) => formClient.post('/forms/save', { form_data: formData }),
-  export: () => formClient.get('/forms/export'),
-  importData: (formData) => formClient.post('/forms/import', { form_data: formData }),
-  newEntry: () => formClient.post('/forms/new'),
+  latest: () => formClient.get('/latest'),
+  save: (formData) => formClient.post('/save', { form_data: formData }),
+  export: () => formClient.get('/export'),
+  importData: (formData) => formClient.post('/import', { form_data: formData }),
+  newEntry: () => formClient.post('/new'),
 }
 
 export const documentApi = {

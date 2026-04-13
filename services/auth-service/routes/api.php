@@ -11,11 +11,11 @@ Route::get('/health', function () {
     ]);
 });
 
-Route::post('/send-code', [AuthController::class, 'sendCode']);
-Route::post('/verify-login', [AuthController::class, 'verifyLogin']);
-Route::post('/mail-test', [AuthController::class, 'mailTest']);
+Route::post('auth/send-code', [AuthController::class, 'sendCode']);
+Route::post('auth/verify-login', [AuthController::class, 'verifyLogin']);
+Route::post('auth/mail-test', [AuthController::class, 'mailTest']);
 
 Route::middleware('auth:sanctum')->group(function () {
-    Route::get('/me', [AuthController::class, 'me']);
+    Route::get('auth/me', [AuthController::class, 'me']);
     Route::post('/logout', [AuthController::class, 'logout']);
 });

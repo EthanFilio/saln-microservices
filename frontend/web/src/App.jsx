@@ -1598,7 +1598,7 @@ function DashboardPage() {
         <div className="privacy-notice">
           <p style={{ fontWeight: 500, marginBottom: '8px' }}>Privacy Reminder</p>
           <p style={{ fontSize: '14px', color: 'var(--text-secondary)', margin: 0 }}>
-            Your data will be automatically deleted after 5 days of inactivity. Export your data locally as JSON for backup.
+            Your data will be automatically deleted after 5 days of inactivity. Export your data locally as JSON for backup.!
           </p>
           </div>
         </div>
